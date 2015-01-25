@@ -1,7 +1,7 @@
 VERSION = 3
 PATCHLEVEL = 10
 SUBLEVEL = 0
-EXTRAVERSION =_BioShock_N910T_2.0
+EXTRAVERSION =_BioShock_Lollipop_
 NAME = Unicycling Gorilla
 
 # *DOCUMENTATION*
@@ -196,7 +196,7 @@ export KBUILD_BUILDHOST := $(SUBARCH)
 #ARCH		?= $(SUBARCH)
 #CROSS_COMPILE	?= $(CONFIG_CROSS_COMPILE:"%"=%)
 ARCH		?= arm
-CROSS_COMPILE	= /home/jamison/android/toolchain/arm-eabi-4.7/bin/arm-eabi-
+CROSS_COMPILE	= /home/jamison/android/toolchain/eabi-linaro-4.8/bin/arm-eabi-
 
 # Architecture as present in compile.h
 UTS_MACHINE 	:= $(ARCH)
