@@ -128,6 +128,12 @@ config CPU_FREQ_DEFAULT_GOV_LIONHEART
             help
               Use the CPUFreq governor 'lionheart' as default.
 
+config CPU_FREQ_DEFAULT_GOV_BIOSHOCK
+	bool "BioShock"
+	select CPU_FREQ_GOV_BIOSHOCK
+	help
+	  Default governor of BioShock kernel
+
 config CPU_FREQ_DEFAULT_GOV_SMARTMAX
             bool "smartmax"
             select CPU_FREQ_GOV_SMARTMAX
@@ -270,6 +276,12 @@ config CPU_FREQ_GOV_LIONHEART
            help
              lionheart' - a "smart" optimized governor!
              If in doubt, say N.
+
+config CPU_FREQ_GOV_BIOSHOCK
+	tristate "'bioshock' cpufreq bioshock"
+	depends on CPU_FREQ
+	help
+	  'bioshock' - More aggressive version of conservative
 
 config CPU_FREQ_GOV_SMARTMAX
            tristate "'smartmax' cpufreq governor"
